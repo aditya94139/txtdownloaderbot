@@ -48,7 +48,7 @@ sudo_groups = [ int(chat) for chat in os.environ.get("GROUPS").split(",")  if ch
 @bot.on_message(filters.command(["start"])&  (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
 
-    editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by BATMAN")
+    editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by PRATIK")
 
 
 @bot.on_message(filters.command(["cancel"])&  (filters.chat(sudo_groups)))
